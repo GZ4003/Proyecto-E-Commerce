@@ -1,0 +1,64 @@
+@import '../variables/_main';
+@include resetStyles;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+.principalWrapper {
+  @media (min-width: 200px){
+      width: 100%;
+  }
+
+  @media (min-width: 1500px){
+      width: 1200px;
+  }
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  position: relative;
+}
+
+.principalWrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.img{
+  width: 10%;
+}
+ul{
+  @include orderFlex(row, space-between, center);
+
+  li{
+    margin: 0 20px 0 20px;
+  }
+  a{
+    font-family: 'Rubik', sans-serif;
+    font-family: 12px;
+    color: #535353;
+  }
+}
+
+.login{
+  @include orderFlex(row,center,center);
+  width: 20%;
+  button{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: transparent;
+    margin-right: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #535353;
+  }
+  a{
+    margin: 0 10px 0 10px;
+    color: #535353;
+
+  }
+}
